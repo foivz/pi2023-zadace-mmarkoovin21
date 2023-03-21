@@ -27,6 +27,4 @@ Zahtjevi za izradu programskog proizvoda:
 https://github.com/foivz/pi2023-zadace-mmarkoovin21/blob/aa2d03ae00b3e328d8195879955cd748c91975e7/Documentation/Korisni%C4%8Dki%20zahtjevi%20-%20obrt%20za%20%C4%8Di%C5%A1%C4%87enje.pdf
 
 ## Resursi
-(Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
-
 Svi resursi nalaze se u mapi _Documentation_.
