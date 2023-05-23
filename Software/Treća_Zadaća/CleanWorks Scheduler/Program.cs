@@ -16,7 +16,7 @@ namespace CleanWorks_Scheduler
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmWorkers());
+            Application.Run(new FrmLogin());
         }
     }
 }
