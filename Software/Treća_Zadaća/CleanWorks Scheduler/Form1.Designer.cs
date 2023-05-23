@@ -98,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 612);
+            this.ClientSize = new System.Drawing.Size(961, 570);
             this.Controls.Add(this.dgvWorkers);
             this.Controls.Add(this.btnWorkerDelete);
             this.Controls.Add(this.btnWorkerEdit);
