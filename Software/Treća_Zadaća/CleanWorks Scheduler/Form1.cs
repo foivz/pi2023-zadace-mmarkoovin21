@@ -21,7 +21,8 @@ namespace CleanWorks_Scheduler
 
             MaterialSkinManager materialSkinMannager = MaterialSkinManager.Instance;
             materialSkinMannager.AddFormToManage(this);
-            const MaterialSkinManager.Themes lIGHT = materialSkinMannager.Themes.LIGHT;
+            const MaterialSkinManager.Themes lIGHT = MaterialSkinManager.Themes.LIGHT;
+
             materialSkinMannager.Theme = lIGHT;
 
             materialSkinMannager.ColorScheme = new ColorScheme(
