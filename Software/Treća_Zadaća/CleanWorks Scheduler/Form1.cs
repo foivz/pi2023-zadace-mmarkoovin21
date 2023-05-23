@@ -8,16 +8,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using MaterialSkin;
+using MaterialSkin.Controls;
+
 namespace CleanWorks_Scheduler
 {
-    public partial class FrmWorkers : Form
+    public partial class FrmWorkers : MaterialForm
     {
         public FrmWorkers()
         {
             InitializeComponent();
+
+            MaterialSkinManager materialSkinMannager = MaterialSkinManager.Instance;
+            materialSkinMannager.AddFormToManage(this);
+            const MaterialSkinManager.Themes lIGHT = materialSkinMannager.Themes.LIGHT;
+            materialSkinMannager.Theme = lIGHT;
+
+            materialSkinMannager.ColorScheme = new ColorScheme(
+                Primary.Blue400, Primary.Blue500,
+                Primary.Blue500, Accent.LightBlue200,
+                TextShade.WHITE
+                );
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWorkerDelete_Click(object sender, EventArgs e)
         {
 
         }
