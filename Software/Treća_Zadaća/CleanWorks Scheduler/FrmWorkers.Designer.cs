@@ -87,11 +87,11 @@
             // dgvWorkers
             // 
             this.dgvWorkers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWorkers.Location = new System.Drawing.Point(26, 93);
+            this.dgvWorkers.Location = new System.Drawing.Point(21, 89);
             this.dgvWorkers.Name = "dgvWorkers";
             this.dgvWorkers.RowHeadersWidth = 51;
             this.dgvWorkers.RowTemplate.Height = 24;
-            this.dgvWorkers.Size = new System.Drawing.Size(911, 419);
+            this.dgvWorkers.Size = new System.Drawing.Size(916, 410);
             this.dgvWorkers.TabIndex = 7;
             // 
             // FrmWorkers
