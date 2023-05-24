@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,13 @@ namespace CleanWorks_Scheduler
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            DB.SetConfiguration("IPS23_mmarkovin21", "mmarkovin21", ":UJ}3rEv");
             Application.Run(new FrmLogin());
         }
     }
 }
+/*
+ * mmarkovin21
+Password: :UJ}3rEv
+Database: IPS23_mmarkovin21
+*/

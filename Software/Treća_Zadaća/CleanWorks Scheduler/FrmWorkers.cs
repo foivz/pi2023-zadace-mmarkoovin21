@@ -44,5 +44,15 @@ namespace CleanWorks_Scheduler
 
         }
 
+        private void txtSearchWorker_TextChanged(object sender, EventArgs e)
+        {
+            var search = txtSearchWorker.Text;
+        }
+
+        private void btnWorkerEdit_Click(object sender, EventArgs e)
+        {
+            FrmEditWorker frmEditWorker = new FrmEditWorker();
+            frmEditWorker.ShowDialog();
+        }
     }
 }

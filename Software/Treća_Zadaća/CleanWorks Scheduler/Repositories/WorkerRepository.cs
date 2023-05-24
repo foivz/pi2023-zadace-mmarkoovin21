@@ -33,7 +33,7 @@ namespace CleanWorks_Scheduler.Repositories
             List<Worker> workers = new List<Worker>();
             string sql = "SELECT * FROM Workers";
             DB.OpenConnection();
-            var reader = DB.GetDataReader(sql);
+            SqlDataReader reader = DB.GetDataReader(sql);
             while (reader.Read())
             {
                 Worker worker = CreateObject(reader);
@@ -47,15 +47,21 @@ namespace CleanWorks_Scheduler.Repositories
         private static Worker CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["Id"].ToString());
-            string firstName = reader["FirstName"].ToString();
-            string lastName = reader["LastName"].ToString();
-            string mail = reader["MailWorker"].ToString();
+            string firstName = reader["Ime"].ToString();
+            string lastName = reader["Prezime"].ToString();
+            string adresa = reader["Adresa"].ToString();
+            string mail = reader["Mail"].ToString();
+            string oib = reader["OIB"].ToString();
+            string broj = reader["Broj_mobitela"].ToString();
             var worker = new Worker
             {
                 Id = id,
                 FirstName = firstName,
                 LastName = lastName,
-                MailWorker = mail
+                Adress = adresa,
+                MailWorker = mail,
+                OIB = oib,
+                PhoneNumber = broj
             };
             return worker;
         }

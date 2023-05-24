@@ -10,5 +10,7 @@ namespace CleanWorks_Scheduler.Models
 
     {
         public string MailWorker { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Adress { get; set; }
     }
 }
