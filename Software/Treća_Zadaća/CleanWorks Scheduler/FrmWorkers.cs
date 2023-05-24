@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CleanWorks_Scheduler.Models;
+using CleanWorks_Scheduler.Repositories;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
@@ -34,7 +35,8 @@ namespace CleanWorks_Scheduler
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            List<Worker> workers = WorkerRepository.GetWorkers();
+            dgvWorkers.DataSource = workers;
         }
 
         private void btnWorkerDelete_Click(object sender, EventArgs e)

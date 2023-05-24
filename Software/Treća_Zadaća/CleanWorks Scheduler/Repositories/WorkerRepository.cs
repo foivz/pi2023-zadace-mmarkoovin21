@@ -5,9 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using DBLayer;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace CleanWorks_Scheduler.Repositories
 {
@@ -60,11 +59,6 @@ namespace CleanWorks_Scheduler.Repositories
             };
             return worker;
         }
-        private void ShowStudents()
-        {
-            List<Worker> workers = WorkerRepository.GetWorkers();
-            dgvWorkers.DataSource = workers;
-        }
-
+        
     }
 }
