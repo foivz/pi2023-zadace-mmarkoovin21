@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddWorker.Designer.cs">
+      <DependentUpon>FrmAddWorker.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEditWorker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\WorkerRepository.cs" />
+    <EmbeddedResource Include="FrmAddWorker.resx">
+      <DependentUpon>FrmAddWorker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEditWorker.resx">
       <DependentUpon>FrmEditWorker.cs</DependentUpon>
     </EmbeddedResource>

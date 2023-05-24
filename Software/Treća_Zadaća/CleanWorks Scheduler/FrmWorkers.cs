@@ -54,5 +54,11 @@ namespace CleanWorks_Scheduler
             FrmEditWorker frmEditWorker = new FrmEditWorker();
             frmEditWorker.ShowDialog();
         }
+
+        private void btnWorkerAdd_Click(object sender, EventArgs e)
+        {
+            FrmAddWorker frmAddWorker = new FrmAddWorker();
+            frmAddWorker.ShowDialog();
+        }
     }
 }

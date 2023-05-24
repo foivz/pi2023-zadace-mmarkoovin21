@@ -54,6 +54,7 @@
             this.btnWorkerAdd.TabIndex = 4;
             this.btnWorkerAdd.Text = "Dodaj";
             this.btnWorkerAdd.UseVisualStyleBackColor = true;
+            this.btnWorkerAdd.Click += new System.EventHandler(this.btnWorkerAdd_Click);
             // 
             // btnWorkerEdit
             // 

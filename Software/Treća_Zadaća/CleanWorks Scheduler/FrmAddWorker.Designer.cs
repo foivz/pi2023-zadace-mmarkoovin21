@@ -1,6 +1,6 @@
 ﻿namespace CleanWorks_Scheduler
 {
-    partial class FrmEditWorker
+    partial class FrmAddWorker
     {
         /// <summary>
         /// Required designer variable.
@@ -28,48 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditWorker));
-            this.lblFrmEditWorker = new MaterialSkin.Controls.MaterialLabel();
-            this.lblFirstName = new MaterialSkin.Controls.MaterialLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddWorker));
+            this.lblFrmAddWorker = new MaterialSkin.Controls.MaterialLabel();
             this.lblLastName = new MaterialSkin.Controls.MaterialLabel();
+            this.lblFirstName = new MaterialSkin.Controls.MaterialLabel();
+            this.lblAdress = new MaterialSkin.Controls.MaterialLabel();
             this.lblMail = new MaterialSkin.Controls.MaterialLabel();
             this.lblOIB = new MaterialSkin.Controls.MaterialLabel();
             this.lblTelephone = new MaterialSkin.Controls.MaterialLabel();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtAdress = new System.Windows.Forms.TextBox();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.txtOIB = new System.Windows.Forms.TextBox();
             this.txtTelephone = new System.Windows.Forms.TextBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
             this.btnSaveWorker = new MaterialSkin.Controls.MaterialFlatButton();
-            this.txtAdress = new System.Windows.Forms.TextBox();
-            this.lblAdress = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
-            // lblFrmEditWorker
+            // lblFrmAddWorker
             // 
-            this.lblFrmEditWorker.AutoSize = true;
-            this.lblFrmEditWorker.Depth = 0;
-            this.lblFrmEditWorker.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblFrmEditWorker.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblFrmEditWorker.Location = new System.Drawing.Point(25, 83);
-            this.lblFrmEditWorker.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblFrmEditWorker.Name = "lblFrmEditWorker";
-            this.lblFrmEditWorker.Size = new System.Drawing.Size(137, 24);
-            this.lblFrmEditWorker.TabIndex = 0;
-            this.lblFrmEditWorker.Text = "Uredite radnika";
-            // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Depth = 0;
-            this.lblFirstName.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblFirstName.Location = new System.Drawing.Point(25, 146);
-            this.lblFirstName.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(47, 24);
-            this.lblFirstName.TabIndex = 1;
-            this.lblFirstName.Text = "Ime:";
+            this.lblFrmAddWorker.AutoSize = true;
+            this.lblFrmAddWorker.Depth = 0;
+            this.lblFrmAddWorker.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblFrmAddWorker.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblFrmAddWorker.Location = new System.Drawing.Point(25, 83);
+            this.lblFrmAddWorker.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblFrmAddWorker.Name = "lblFrmAddWorker";
+            this.lblFrmAddWorker.Size = new System.Drawing.Size(142, 24);
+            this.lblFrmAddWorker.TabIndex = 0;
+            this.lblFrmAddWorker.Text = "Dodajte radnika";
             // 
             // lblLastName
             // 
@@ -81,8 +68,34 @@
             this.lblLastName.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(84, 24);
-            this.lblLastName.TabIndex = 3;
+            this.lblLastName.TabIndex = 1;
             this.lblLastName.Text = "Prezime:";
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Depth = 0;
+            this.lblFirstName.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblFirstName.Location = new System.Drawing.Point(25, 146);
+            this.lblFirstName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(47, 24);
+            this.lblFirstName.TabIndex = 2;
+            this.lblFirstName.Text = "Ime:";
+            // 
+            // lblAdress
+            // 
+            this.lblAdress.AutoSize = true;
+            this.lblAdress.Depth = 0;
+            this.lblAdress.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblAdress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblAdress.Location = new System.Drawing.Point(25, 327);
+            this.lblAdress.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblAdress.Name = "lblAdress";
+            this.lblAdress.Size = new System.Drawing.Size(170, 24);
+            this.lblAdress.TabIndex = 3;
+            this.lblAdress.Text = "Adresa stanovanja:";
             // 
             // lblMail
             // 
@@ -123,40 +136,47 @@
             this.lblTelephone.TabIndex = 6;
             this.lblTelephone.Text = "Broj mobitela:";
             // 
-            // txtMail
+            // txtFirstName
             // 
-            this.txtMail.Location = new System.Drawing.Point(392, 186);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(250, 22);
-            this.txtMail.TabIndex = 8;
-            // 
-            // txtOIB
-            // 
-            this.txtOIB.Location = new System.Drawing.Point(392, 278);
-            this.txtOIB.Name = "txtOIB";
-            this.txtOIB.Size = new System.Drawing.Size(148, 22);
-            this.txtOIB.TabIndex = 9;
-            // 
-            // txtTelephone
-            // 
-            this.txtTelephone.Location = new System.Drawing.Point(392, 375);
-            this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(148, 22);
-            this.txtTelephone.TabIndex = 10;
+            this.txtFirstName.Location = new System.Drawing.Point(29, 186);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(188, 22);
+            this.txtFirstName.TabIndex = 7;
             // 
             // txtLastName
             // 
             this.txtLastName.Location = new System.Drawing.Point(29, 278);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(182, 22);
-            this.txtLastName.TabIndex = 11;
+            this.txtLastName.TabIndex = 8;
             // 
-            // txtFirstName
+            // txtAdress
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(29, 186);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(188, 22);
-            this.txtFirstName.TabIndex = 13;
+            this.txtAdress.Location = new System.Drawing.Point(29, 376);
+            this.txtAdress.Name = "txtAdress";
+            this.txtAdress.Size = new System.Drawing.Size(224, 22);
+            this.txtAdress.TabIndex = 9;
+            // 
+            // txtMail
+            // 
+            this.txtMail.Location = new System.Drawing.Point(392, 186);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(250, 22);
+            this.txtMail.TabIndex = 10;
+            // 
+            // txtOIB
+            // 
+            this.txtOIB.Location = new System.Drawing.Point(392, 278);
+            this.txtOIB.Name = "txtOIB";
+            this.txtOIB.Size = new System.Drawing.Size(148, 22);
+            this.txtOIB.TabIndex = 11;
+            // 
+            // txtTelephone
+            // 
+            this.txtTelephone.Location = new System.Drawing.Point(392, 375);
+            this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.Size = new System.Drawing.Size(148, 22);
+            this.txtTelephone.TabIndex = 12;
             // 
             // btnSaveWorker
             // 
@@ -170,53 +190,33 @@
             this.btnSaveWorker.Name = "btnSaveWorker";
             this.btnSaveWorker.Primary = false;
             this.btnSaveWorker.Size = new System.Drawing.Size(112, 36);
-            this.btnSaveWorker.TabIndex = 14;
+            this.btnSaveWorker.TabIndex = 13;
             this.btnSaveWorker.Text = "Spremi";
             this.btnSaveWorker.UseVisualStyleBackColor = true;
             // 
-            // txtAdress
-            // 
-            this.txtAdress.Location = new System.Drawing.Point(29, 376);
-            this.txtAdress.Name = "txtAdress";
-            this.txtAdress.Size = new System.Drawing.Size(224, 22);
-            this.txtAdress.TabIndex = 12;
-            // 
-            // lblAdress
-            // 
-            this.lblAdress.AutoSize = true;
-            this.lblAdress.Depth = 0;
-            this.lblAdress.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblAdress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAdress.Location = new System.Drawing.Point(25, 327);
-            this.lblAdress.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblAdress.Name = "lblAdress";
-            this.lblAdress.Size = new System.Drawing.Size(170, 24);
-            this.lblAdress.TabIndex = 15;
-            this.lblAdress.Text = "Adresa stanovanja:";
-            // 
-            // FrmEditWorker
+            // FrmAddWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 460);
-            this.Controls.Add(this.lblAdress);
             this.Controls.Add(this.btnSaveWorker);
-            this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.txtAdress);
-            this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.txtTelephone);
             this.Controls.Add(this.txtOIB);
             this.Controls.Add(this.txtMail);
+            this.Controls.Add(this.txtAdress);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.lblTelephone);
             this.Controls.Add(this.lblOIB);
             this.Controls.Add(this.lblMail);
-            this.Controls.Add(this.lblLastName);
+            this.Controls.Add(this.lblAdress);
             this.Controls.Add(this.lblFirstName);
-            this.Controls.Add(this.lblFrmEditWorker);
-            this.Name = "FrmEditWorker";
+            this.Controls.Add(this.lblLastName);
+            this.Controls.Add(this.lblFrmAddWorker);
+            this.Name = "FrmAddWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmEditWorker";
-            this.Load += new System.EventHandler(this.FrmEditWorker_Load);
+            this.Text = "FrmAddWorker";
+            this.Load += new System.EventHandler(this.FrmAddWorker_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,19 +224,19 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialLabel lblFrmEditWorker;
-        private MaterialSkin.Controls.MaterialLabel lblFirstName;
+        private MaterialSkin.Controls.MaterialLabel lblFrmAddWorker;
         private MaterialSkin.Controls.MaterialLabel lblLastName;
+        private MaterialSkin.Controls.MaterialLabel lblFirstName;
+        private MaterialSkin.Controls.MaterialLabel lblAdress;
         private MaterialSkin.Controls.MaterialLabel lblMail;
         private MaterialSkin.Controls.MaterialLabel lblOIB;
         private MaterialSkin.Controls.MaterialLabel lblTelephone;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtAdress;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.TextBox txtOIB;
         private System.Windows.Forms.TextBox txtTelephone;
-        private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.TextBox txtFirstName;
         private MaterialSkin.Controls.MaterialFlatButton btnSaveWorker;
-        private System.Windows.Forms.TextBox txtAdress;
-        private MaterialSkin.Controls.MaterialLabel lblAdress;
     }
 }
