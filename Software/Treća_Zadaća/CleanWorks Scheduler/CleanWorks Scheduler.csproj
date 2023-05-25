@@ -80,6 +80,7 @@
     <Compile Include="FrmWorkers.Designer.cs">
       <DependentUpon>FrmWorkers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Worker.cs" />
     <Compile Include="FrmLogin.cs">

@@ -45,9 +45,6 @@
             this.lblAdress = new MaterialSkin.Controls.MaterialLabel();
             this.lblIdentificationNumber = new MaterialSkin.Controls.MaterialLabel();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.btnPasswordGenerator = new MaterialSkin.Controls.MaterialFlatButton();
-            this.txtPasswordGenerator = new System.Windows.Forms.TextBox();
-            this.lblPasswordGenerator = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // lblFrmEditWorker
@@ -219,50 +216,11 @@
             this.txtId.Size = new System.Drawing.Size(183, 22);
             this.txtId.TabIndex = 19;
             // 
-            // btnPasswordGenerator
-            // 
-            this.btnPasswordGenerator.AutoSize = true;
-            this.btnPasswordGenerator.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPasswordGenerator.Depth = 0;
-            this.btnPasswordGenerator.Icon = null;
-            this.btnPasswordGenerator.Location = new System.Drawing.Point(388, 496);
-            this.btnPasswordGenerator.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnPasswordGenerator.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnPasswordGenerator.Name = "btnPasswordGenerator";
-            this.btnPasswordGenerator.Primary = false;
-            this.btnPasswordGenerator.Size = new System.Drawing.Size(163, 36);
-            this.btnPasswordGenerator.TabIndex = 23;
-            this.btnPasswordGenerator.Text = "Generiraj šifru";
-            this.btnPasswordGenerator.UseVisualStyleBackColor = true;
-            // 
-            // txtPasswordGenerator
-            // 
-            this.txtPasswordGenerator.Location = new System.Drawing.Point(388, 454);
-            this.txtPasswordGenerator.Name = "txtPasswordGenerator";
-            this.txtPasswordGenerator.Size = new System.Drawing.Size(133, 22);
-            this.txtPasswordGenerator.TabIndex = 22;
-            // 
-            // lblPasswordGenerator
-            // 
-            this.lblPasswordGenerator.AutoSize = true;
-            this.lblPasswordGenerator.Depth = 0;
-            this.lblPasswordGenerator.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblPasswordGenerator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPasswordGenerator.Location = new System.Drawing.Point(388, 416);
-            this.lblPasswordGenerator.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblPasswordGenerator.Name = "lblPasswordGenerator";
-            this.lblPasswordGenerator.Size = new System.Drawing.Size(133, 24);
-            this.lblPasswordGenerator.TabIndex = 21;
-            this.lblPasswordGenerator.Text = "Generiraj šifru:";
-            // 
             // FrmEditWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 566);
-            this.Controls.Add(this.btnPasswordGenerator);
-            this.Controls.Add(this.txtPasswordGenerator);
-            this.Controls.Add(this.lblPasswordGenerator);
             this.Controls.Add(this.lblIdentificationNumber);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblAdress);
@@ -306,8 +264,5 @@
         private MaterialSkin.Controls.MaterialLabel lblAdress;
         private MaterialSkin.Controls.MaterialLabel lblIdentificationNumber;
         private System.Windows.Forms.TextBox txtId;
-        private MaterialSkin.Controls.MaterialFlatButton btnPasswordGenerator;
-        private System.Windows.Forms.TextBox txtPasswordGenerator;
-        private MaterialSkin.Controls.MaterialLabel lblPasswordGenerator;
     }
 }
