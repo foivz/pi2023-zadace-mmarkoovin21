@@ -36,6 +36,7 @@
             this.lblSearchWorker = new MaterialSkin.Controls.MaterialLabel();
             this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.txtSearchWorker = new System.Windows.Forms.TextBox();
+            this.btnSearch = new MaterialSkin.Controls.MaterialFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,11 +131,27 @@
             this.txtSearchWorker.TabIndex = 9;
             this.txtSearchWorker.TextChanged += new System.EventHandler(this.txtSearchWorker_TextChanged);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.AutoSize = true;
+            this.btnSearch.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSearch.Depth = 0;
+            this.btnSearch.Icon = ((System.Drawing.Image)(resources.GetObject("btnSearch.Icon")));
+            this.btnSearch.Location = new System.Drawing.Point(435, 85);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnSearch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Primary = false;
+            this.btnSearch.Size = new System.Drawing.Size(44, 36);
+            this.btnSearch.TabIndex = 10;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // FrmWorkers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 580);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearchWorker);
             this.Controls.Add(this.lblSearchWorker);
             this.Controls.Add(this.dgvWorkers);
@@ -160,6 +177,7 @@
         private MaterialSkin.Controls.MaterialLabel lblSearchWorker;
         private MaterialSkin.Controls.MaterialContextMenuStrip materialContextMenuStrip1;
         private System.Windows.Forms.TextBox txtSearchWorker;
+        private MaterialSkin.Controls.MaterialFlatButton btnSearch;
     }
 }
 

@@ -43,6 +43,9 @@
             this.txtOIB = new System.Windows.Forms.TextBox();
             this.txtTelephone = new System.Windows.Forms.TextBox();
             this.btnSaveWorker = new MaterialSkin.Controls.MaterialFlatButton();
+            this.lblPasswordGenerator = new MaterialSkin.Controls.MaterialLabel();
+            this.txtPasswordGenerator = new System.Windows.Forms.TextBox();
+            this.btnPasswordGenerator = new MaterialSkin.Controls.MaterialFlatButton();
             this.SuspendLayout();
             // 
             // lblFrmAddWorker
@@ -184,7 +187,7 @@
             this.btnSaveWorker.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSaveWorker.Depth = 0;
             this.btnSaveWorker.Icon = ((System.Drawing.Image)(resources.GetObject("btnSaveWorker.Icon")));
-            this.btnSaveWorker.Location = new System.Drawing.Point(652, 396);
+            this.btnSaveWorker.Location = new System.Drawing.Point(652, 471);
             this.btnSaveWorker.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnSaveWorker.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSaveWorker.Name = "btnSaveWorker";
@@ -194,11 +197,50 @@
             this.btnSaveWorker.Text = "Spremi";
             this.btnSaveWorker.UseVisualStyleBackColor = true;
             // 
+            // lblPasswordGenerator
+            // 
+            this.lblPasswordGenerator.AutoSize = true;
+            this.lblPasswordGenerator.Depth = 0;
+            this.lblPasswordGenerator.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblPasswordGenerator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblPasswordGenerator.Location = new System.Drawing.Point(29, 438);
+            this.lblPasswordGenerator.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblPasswordGenerator.Name = "lblPasswordGenerator";
+            this.lblPasswordGenerator.Size = new System.Drawing.Size(133, 24);
+            this.lblPasswordGenerator.TabIndex = 14;
+            this.lblPasswordGenerator.Text = "Generiraj šifru:";
+            // 
+            // txtPasswordGenerator
+            // 
+            this.txtPasswordGenerator.Location = new System.Drawing.Point(29, 471);
+            this.txtPasswordGenerator.Name = "txtPasswordGenerator";
+            this.txtPasswordGenerator.Size = new System.Drawing.Size(133, 22);
+            this.txtPasswordGenerator.TabIndex = 15;
+            // 
+            // btnPasswordGenerator
+            // 
+            this.btnPasswordGenerator.AutoSize = true;
+            this.btnPasswordGenerator.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPasswordGenerator.Depth = 0;
+            this.btnPasswordGenerator.Icon = null;
+            this.btnPasswordGenerator.Location = new System.Drawing.Point(196, 457);
+            this.btnPasswordGenerator.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnPasswordGenerator.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPasswordGenerator.Name = "btnPasswordGenerator";
+            this.btnPasswordGenerator.Primary = false;
+            this.btnPasswordGenerator.Size = new System.Drawing.Size(163, 36);
+            this.btnPasswordGenerator.TabIndex = 16;
+            this.btnPasswordGenerator.Text = "Generiraj šifru";
+            this.btnPasswordGenerator.UseVisualStyleBackColor = true;
+            // 
             // FrmAddWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 460);
+            this.ClientSize = new System.Drawing.Size(800, 534);
+            this.Controls.Add(this.btnPasswordGenerator);
+            this.Controls.Add(this.txtPasswordGenerator);
+            this.Controls.Add(this.lblPasswordGenerator);
             this.Controls.Add(this.btnSaveWorker);
             this.Controls.Add(this.txtTelephone);
             this.Controls.Add(this.txtOIB);
@@ -238,5 +280,8 @@
         private System.Windows.Forms.TextBox txtOIB;
         private System.Windows.Forms.TextBox txtTelephone;
         private MaterialSkin.Controls.MaterialFlatButton btnSaveWorker;
+        private MaterialSkin.Controls.MaterialLabel lblPasswordGenerator;
+        private System.Windows.Forms.TextBox txtPasswordGenerator;
+        private MaterialSkin.Controls.MaterialFlatButton btnPasswordGenerator;
     }
 }
