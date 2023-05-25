@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Data.SqlTypes;
 
 namespace CleanWorks_Scheduler.Repositories
 {
@@ -43,7 +44,21 @@ namespace CleanWorks_Scheduler.Repositories
             DB.CloseConnection();
             return workers;
         }
-
+        public static List<Worker> GetWorkerByName(string name, string surname)
+        {
+            string sql = $"SELECT * FROM Workers WHERE Ime='{name}' OR Prezime='{surname}'";
+            List <Worker> workers = new List<Worker>();
+            DB.OpenConnection();
+            SqlDataReader reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Worker worker = CreateObject(reader);
+                workers.Add(worker);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return workers;
+        }
         private static Worker CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["Id"].ToString());
@@ -53,6 +68,7 @@ namespace CleanWorks_Scheduler.Repositories
             string mail = reader["Mail"].ToString();
             string oib = reader["OIB"].ToString();
             string broj = reader["Broj_mobitela"].ToString();
+            int sifra = int.Parse(reader["Sifra"].ToString());
             var worker = new Worker
             {
                 Id = id,
@@ -61,10 +77,11 @@ namespace CleanWorks_Scheduler.Repositories
                 Adress = adresa,
                 MailWorker = mail,
                 OIB = oib,
-                PhoneNumber = broj
+                PhoneNumber = broj,
+                Password = sifra
             };
             return worker;
         }
-        
+
     }
 }

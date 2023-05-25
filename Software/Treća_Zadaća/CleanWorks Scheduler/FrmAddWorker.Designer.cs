@@ -46,6 +46,8 @@
             this.lblPasswordGenerator = new MaterialSkin.Controls.MaterialLabel();
             this.txtPasswordGenerator = new System.Windows.Forms.TextBox();
             this.btnPasswordGenerator = new MaterialSkin.Controls.MaterialFlatButton();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblIdentificationNumber = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // lblFrmAddWorker
@@ -67,7 +69,7 @@
             this.lblLastName.Depth = 0;
             this.lblLastName.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblLastName.Location = new System.Drawing.Point(25, 235);
+            this.lblLastName.Location = new System.Drawing.Point(25, 324);
             this.lblLastName.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(84, 24);
@@ -80,7 +82,7 @@
             this.lblFirstName.Depth = 0;
             this.lblFirstName.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblFirstName.Location = new System.Drawing.Point(25, 146);
+            this.lblFirstName.Location = new System.Drawing.Point(25, 235);
             this.lblFirstName.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(47, 24);
@@ -93,7 +95,7 @@
             this.lblAdress.Depth = 0;
             this.lblAdress.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblAdress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAdress.Location = new System.Drawing.Point(25, 327);
+            this.lblAdress.Location = new System.Drawing.Point(25, 416);
             this.lblAdress.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblAdress.Name = "lblAdress";
             this.lblAdress.Size = new System.Drawing.Size(170, 24);
@@ -141,21 +143,21 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(29, 186);
+            this.txtFirstName.Location = new System.Drawing.Point(29, 275);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(188, 22);
             this.txtFirstName.TabIndex = 7;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(29, 278);
+            this.txtLastName.Location = new System.Drawing.Point(29, 367);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(182, 22);
             this.txtLastName.TabIndex = 8;
             // 
             // txtAdress
             // 
-            this.txtAdress.Location = new System.Drawing.Point(29, 376);
+            this.txtAdress.Location = new System.Drawing.Point(29, 465);
             this.txtAdress.Name = "txtAdress";
             this.txtAdress.Size = new System.Drawing.Size(224, 22);
             this.txtAdress.TabIndex = 9;
@@ -187,7 +189,7 @@
             this.btnSaveWorker.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSaveWorker.Depth = 0;
             this.btnSaveWorker.Icon = ((System.Drawing.Image)(resources.GetObject("btnSaveWorker.Icon")));
-            this.btnSaveWorker.Location = new System.Drawing.Point(652, 471);
+            this.btnSaveWorker.Location = new System.Drawing.Point(657, 501);
             this.btnSaveWorker.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnSaveWorker.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSaveWorker.Name = "btnSaveWorker";
@@ -196,6 +198,7 @@
             this.btnSaveWorker.TabIndex = 13;
             this.btnSaveWorker.Text = "Spremi";
             this.btnSaveWorker.UseVisualStyleBackColor = true;
+            this.btnSaveWorker.Click += new System.EventHandler(this.btnSaveWorker_Click);
             // 
             // lblPasswordGenerator
             // 
@@ -203,7 +206,7 @@
             this.lblPasswordGenerator.Depth = 0;
             this.lblPasswordGenerator.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblPasswordGenerator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPasswordGenerator.Location = new System.Drawing.Point(29, 438);
+            this.lblPasswordGenerator.Location = new System.Drawing.Point(391, 421);
             this.lblPasswordGenerator.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPasswordGenerator.Name = "lblPasswordGenerator";
             this.lblPasswordGenerator.Size = new System.Drawing.Size(133, 24);
@@ -212,7 +215,7 @@
             // 
             // txtPasswordGenerator
             // 
-            this.txtPasswordGenerator.Location = new System.Drawing.Point(29, 471);
+            this.txtPasswordGenerator.Location = new System.Drawing.Point(391, 459);
             this.txtPasswordGenerator.Name = "txtPasswordGenerator";
             this.txtPasswordGenerator.Size = new System.Drawing.Size(133, 22);
             this.txtPasswordGenerator.TabIndex = 15;
@@ -223,7 +226,7 @@
             this.btnPasswordGenerator.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPasswordGenerator.Depth = 0;
             this.btnPasswordGenerator.Icon = null;
-            this.btnPasswordGenerator.Location = new System.Drawing.Point(196, 457);
+            this.btnPasswordGenerator.Location = new System.Drawing.Point(391, 501);
             this.btnPasswordGenerator.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnPasswordGenerator.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnPasswordGenerator.Name = "btnPasswordGenerator";
@@ -232,12 +235,35 @@
             this.btnPasswordGenerator.TabIndex = 16;
             this.btnPasswordGenerator.Text = "Generiraj šifru";
             this.btnPasswordGenerator.UseVisualStyleBackColor = true;
+            this.btnPasswordGenerator.Click += new System.EventHandler(this.btnPasswordGenerator_Click);
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(29, 187);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(183, 22);
+            this.txtId.TabIndex = 17;
+            // 
+            // lblIdentificationNumber
+            // 
+            this.lblIdentificationNumber.AutoSize = true;
+            this.lblIdentificationNumber.Depth = 0;
+            this.lblIdentificationNumber.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblIdentificationNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblIdentificationNumber.Location = new System.Drawing.Point(25, 149);
+            this.lblIdentificationNumber.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblIdentificationNumber.Name = "lblIdentificationNumber";
+            this.lblIdentificationNumber.Size = new System.Drawing.Size(31, 24);
+            this.lblIdentificationNumber.TabIndex = 18;
+            this.lblIdentificationNumber.Text = "Id:";
             // 
             // FrmAddWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 534);
+            this.ClientSize = new System.Drawing.Size(800, 565);
+            this.Controls.Add(this.lblIdentificationNumber);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnPasswordGenerator);
             this.Controls.Add(this.txtPasswordGenerator);
             this.Controls.Add(this.lblPasswordGenerator);
@@ -283,5 +309,7 @@
         private MaterialSkin.Controls.MaterialLabel lblPasswordGenerator;
         private System.Windows.Forms.TextBox txtPasswordGenerator;
         private MaterialSkin.Controls.MaterialFlatButton btnPasswordGenerator;
+        private System.Windows.Forms.TextBox txtId;
+        private MaterialSkin.Controls.MaterialLabel lblIdentificationNumber;
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CleanWorks_Scheduler.Models;
 using CleanWorks_Scheduler.Repositories;
+using DBLayer;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
@@ -39,16 +40,24 @@ namespace CleanWorks_Scheduler
             dgvWorkers.DataSource = workers;
         }
 
+        public Worker OdabraniRed()
+        {
+            return dgvWorkers.CurrentRow.DataBoundItem as Worker;
+        }
         private void btnWorkerDelete_Click(object sender, EventArgs e)
         {
-
+            Worker worker = OdabraniRed();
+            string sql = $"DELETE FROM Workers WHERE Id = '{worker.Id}'";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+            Hide();
+            Close();
+            FrmWorkers frmWorkers = new FrmWorkers();
+            frmWorkers.ShowDialog();
         }
 
-        private void txtSearchWorker_TextChanged(object sender, EventArgs e)
-        {
-            var search = txtSearchWorker.Text;
-        }
-
+        
         private void btnWorkerEdit_Click(object sender, EventArgs e)
         {
             FrmEditWorker frmEditWorker = new FrmEditWorker();
@@ -57,8 +66,24 @@ namespace CleanWorks_Scheduler
 
         private void btnWorkerAdd_Click(object sender, EventArgs e)
         {
+            Hide();
+            Close();
             FrmAddWorker frmAddWorker = new FrmAddWorker();
             frmAddWorker.ShowDialog();
+            
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            List<Worker> workers = WorkerRepository.GetWorkerByName(txtSearchWorker.Text, txtSearchWorker.Text);
+            dgvWorkers.DataSource = workers;
+            if (txtSearchWorker.Text == "")
+            {
+                Hide();
+                Close();
+                FrmWorkers frmWorkers = new FrmWorkers();
+                frmWorkers.ShowDialog();
+            }
         }
     }
 }
