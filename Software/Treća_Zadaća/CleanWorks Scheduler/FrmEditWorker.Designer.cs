@@ -37,7 +37,6 @@
             this.txtAdress = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.lblPasswordGenerator = new System.Windows.Forms.Label();
             this.lblTelephone = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
@@ -46,6 +45,9 @@
             this.lblMail = new System.Windows.Forms.Label();
             this.lblOIB = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
+            this.numID = new System.Windows.Forms.NumericUpDown();
+            this.btnDiscover = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numID)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSaveWorker
@@ -118,13 +120,6 @@
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(192, 22);
             this.txtFirstName.TabIndex = 29;
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(41, 89);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(140, 22);
-            this.txtId.TabIndex = 28;
             // 
             // lblPasswordGenerator
             // 
@@ -222,12 +217,32 @@
             this.lblId.Text = "ID:";
             this.lblId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // numID
+            // 
+            this.numID.Location = new System.Drawing.Point(41, 89);
+            this.numID.Name = "numID";
+            this.numID.Size = new System.Drawing.Size(172, 22);
+            this.numID.TabIndex = 38;
+            // 
+            // btnDiscover
+            // 
+            this.btnDiscover.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnDiscover.Location = new System.Drawing.Point(652, 344);
+            this.btnDiscover.Name = "btnDiscover";
+            this.btnDiscover.Size = new System.Drawing.Size(112, 42);
+            this.btnDiscover.TabIndex = 40;
+            this.btnDiscover.Text = "Otkrij";
+            this.btnDiscover.UseVisualStyleBackColor = true;
+            this.btnDiscover.Click += new System.EventHandler(this.btnDiscover_Click);
+            // 
             // FrmEditWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(800, 465);
+            this.Controls.Add(this.btnDiscover);
+            this.Controls.Add(this.numID);
             this.Controls.Add(this.btnSaveWorker);
             this.Controls.Add(this.btnPasswordGenerator);
             this.Controls.Add(this.txtPasswordGenerator);
@@ -237,7 +252,6 @@
             this.Controls.Add(this.txtAdress);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblPasswordGenerator);
             this.Controls.Add(this.lblTelephone);
             this.Controls.Add(this.lblFirstName);
@@ -250,7 +264,7 @@
             this.Name = "FrmEditWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Uredite radnika";
-            this.Load += new System.EventHandler(this.FrmEditWorker_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numID)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,7 +281,6 @@
         private System.Windows.Forms.TextBox txtAdress;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblPasswordGenerator;
         private System.Windows.Forms.Label lblTelephone;
         private System.Windows.Forms.Label lblFirstName;
@@ -276,5 +289,7 @@
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.Label lblOIB;
         private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.NumericUpDown numID;
+        private System.Windows.Forms.Button btnDiscover;
     }
 }

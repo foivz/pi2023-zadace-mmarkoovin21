@@ -55,9 +55,9 @@
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnSearch.Location = new System.Drawing.Point(198, 69);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(103, 34);
+            this.btnSearch.Size = new System.Drawing.Size(187, 34);
             this.btnSearch.TabIndex = 6;
-            this.btnSearch.Text = "Pretraži";
+            this.btnSearch.Text = "Osvježi rezultate";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 

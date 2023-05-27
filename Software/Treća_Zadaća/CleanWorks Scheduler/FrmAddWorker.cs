@@ -35,8 +35,6 @@ namespace CleanWorks_Scheduler
             AddWorker();
             Hide();
             Close();
-            FrmWorkers frmWorkers = new FrmWorkers();
-            frmWorkers.ShowDialog();
         }
         public void AddWorker()
         {
