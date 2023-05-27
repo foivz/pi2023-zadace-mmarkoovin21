@@ -15,12 +15,6 @@ namespace CleanWorks_Scheduler
         public FrmStart()
         {
             InitializeComponent();
-
-        }
-
-        private void FrmStart_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)

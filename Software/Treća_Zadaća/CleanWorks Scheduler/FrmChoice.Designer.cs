@@ -28,105 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmChoice));
-            this.btnWorkers = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnClients = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnCalendar = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnServices = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.lblWarning = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnCalendar = new System.Windows.Forms.Button();
+            this.btnClients = new System.Windows.Forms.Button();
+            this.btnWorkers = new System.Windows.Forms.Button();
+            this.btnServices = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnWorkers
+            // label3
             // 
-            this.btnWorkers.AutoSize = true;
-            this.btnWorkers.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnWorkers.Depth = 0;
-            this.btnWorkers.Icon = ((System.Drawing.Image)(resources.GetObject("btnWorkers.Icon")));
-            this.btnWorkers.Location = new System.Drawing.Point(67, 72);
-            this.btnWorkers.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnWorkers.Name = "btnWorkers";
-            this.btnWorkers.Primary = true;
-            this.btnWorkers.Size = new System.Drawing.Size(116, 36);
-            this.btnWorkers.TabIndex = 0;
-            this.btnWorkers.Text = "Radnici";
-            this.btnWorkers.UseVisualStyleBackColor = true;
-            this.btnWorkers.Click += new System.EventHandler(this.btnWorkers_Click);
-            // 
-            // btnClients
-            // 
-            this.btnClients.AutoSize = true;
-            this.btnClients.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnClients.Depth = 0;
-            this.btnClients.Icon = ((System.Drawing.Image)(resources.GetObject("btnClients.Icon")));
-            this.btnClients.Location = new System.Drawing.Point(249, 72);
-            this.btnClients.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnClients.Name = "btnClients";
-            this.btnClients.Primary = true;
-            this.btnClients.Size = new System.Drawing.Size(122, 36);
-            this.btnClients.TabIndex = 1;
-            this.btnClients.Text = "Klijenti";
-            this.btnClients.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(83, 263);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(333, 72);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Ostali gumbi nisu funcionalni jer se ne \r\nobrađuju u funkcionalnom zahtjevu.\r\nZa " +
+    "nastavak pritisnite gumb Radnici.\r\n";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCalendar
             // 
-            this.btnCalendar.AutoSize = true;
-            this.btnCalendar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnCalendar.Depth = 0;
-            this.btnCalendar.Icon = ((System.Drawing.Image)(resources.GetObject("btnCalendar.Icon")));
-            this.btnCalendar.Location = new System.Drawing.Point(67, 141);
-            this.btnCalendar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnCalendar.Location = new System.Drawing.Point(96, 145);
             this.btnCalendar.Name = "btnCalendar";
-            this.btnCalendar.Primary = true;
-            this.btnCalendar.Size = new System.Drawing.Size(137, 36);
-            this.btnCalendar.TabIndex = 2;
-            this.btnCalendar.Text = "Raspored";
+            this.btnCalendar.Size = new System.Drawing.Size(145, 78);
+            this.btnCalendar.TabIndex = 6;
+            this.btnCalendar.Text = "Kalendar";
             this.btnCalendar.UseVisualStyleBackColor = true;
+            // 
+            // btnClients
+            // 
+            this.btnClients.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnClients.Location = new System.Drawing.Point(250, 59);
+            this.btnClients.Name = "btnClients";
+            this.btnClients.Size = new System.Drawing.Size(145, 78);
+            this.btnClients.TabIndex = 7;
+            this.btnClients.Text = "Klijenti";
+            this.btnClients.UseVisualStyleBackColor = true;
+            // 
+            // btnWorkers
+            // 
+            this.btnWorkers.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWorkers.Location = new System.Drawing.Point(96, 59);
+            this.btnWorkers.Name = "btnWorkers";
+            this.btnWorkers.Size = new System.Drawing.Size(145, 78);
+            this.btnWorkers.TabIndex = 8;
+            this.btnWorkers.Text = "Radnici";
+            this.btnWorkers.UseVisualStyleBackColor = true;
             // 
             // btnServices
             // 
-            this.btnServices.AutoSize = true;
-            this.btnServices.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnServices.Depth = 0;
-            this.btnServices.Icon = ((System.Drawing.Image)(resources.GetObject("btnServices.Icon")));
-            this.btnServices.Location = new System.Drawing.Point(249, 141);
-            this.btnServices.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnServices.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnServices.Location = new System.Drawing.Point(250, 145);
             this.btnServices.Name = "btnServices";
-            this.btnServices.Primary = true;
-            this.btnServices.Size = new System.Drawing.Size(113, 36);
-            this.btnServices.TabIndex = 3;
+            this.btnServices.Size = new System.Drawing.Size(145, 78);
+            this.btnServices.TabIndex = 9;
             this.btnServices.Text = "Usluge";
             this.btnServices.UseVisualStyleBackColor = true;
-            // 
-            // lblWarning
-            // 
-            this.lblWarning.AutoSize = true;
-            this.lblWarning.BackColor = System.Drawing.Color.White;
-            this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblWarning.Location = new System.Drawing.Point(32, 216);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(375, 72);
-            this.lblWarning.TabIndex = 5;
-            this.lblWarning.Text = "Ostale funkcije nisu implementirane u ovom\r\nfunkcionalnom zahtjevu!\r\nPritisnite g" +
-    "umb Radnici za nastavak.\r\n";
-            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmChoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(436, 347);
-            this.Controls.Add(this.lblWarning);
+            this.ClientSize = new System.Drawing.Size(507, 366);
             this.Controls.Add(this.btnServices);
-            this.Controls.Add(this.btnCalendar);
-            this.Controls.Add(this.btnClients);
             this.Controls.Add(this.btnWorkers);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Controls.Add(this.btnClients);
+            this.Controls.Add(this.btnCalendar);
+            this.Controls.Add(this.label3);
             this.Name = "FrmChoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Izbornik";
-            this.Load += new System.EventHandler(this.FrmChoice_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,10 +110,10 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialRaisedButton btnWorkers;
-        private MaterialSkin.Controls.MaterialRaisedButton btnClients;
-        private MaterialSkin.Controls.MaterialRaisedButton btnCalendar;
-        private MaterialSkin.Controls.MaterialRaisedButton btnServices;
-        private System.Windows.Forms.Label lblWarning;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCalendar;
+        private System.Windows.Forms.Button btnClients;
+        private System.Windows.Forms.Button btnWorkers;
+        private System.Windows.Forms.Button btnServices;
     }
 }

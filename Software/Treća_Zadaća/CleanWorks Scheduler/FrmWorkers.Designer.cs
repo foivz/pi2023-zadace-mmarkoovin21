@@ -28,142 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmWorkers));
-            this.btnWorkerAdd = new MaterialSkin.Controls.MaterialFlatButton();
-            this.btnWorkerEdit = new MaterialSkin.Controls.MaterialFlatButton();
-            this.btnWorkerDelete = new MaterialSkin.Controls.MaterialFlatButton();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.dgvWorkers = new System.Windows.Forms.DataGridView();
-            this.lblSearchWorker = new MaterialSkin.Controls.MaterialLabel();
-            this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
+            this.btnWorkerDelete = new System.Windows.Forms.Button();
+            this.btnWorkerEdit = new System.Windows.Forms.Button();
+            this.btnWorkerAdd = new System.Windows.Forms.Button();
             this.txtSearchWorker = new System.Windows.Forms.TextBox();
-            this.btnSearch = new MaterialSkin.Controls.MaterialFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnWorkerAdd
+            // lblUsername
             // 
-            this.btnWorkerAdd.AutoSize = true;
-            this.btnWorkerAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnWorkerAdd.Depth = 0;
-            this.btnWorkerAdd.Icon = ((System.Drawing.Image)(resources.GetObject("btnWorkerAdd.Icon")));
-            this.btnWorkerAdd.Location = new System.Drawing.Point(697, 42);
-            this.btnWorkerAdd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnWorkerAdd.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnWorkerAdd.Name = "btnWorkerAdd";
-            this.btnWorkerAdd.Primary = false;
-            this.btnWorkerAdd.Size = new System.Drawing.Size(105, 36);
-            this.btnWorkerAdd.TabIndex = 4;
-            this.btnWorkerAdd.Text = "Dodaj";
-            this.btnWorkerAdd.UseVisualStyleBackColor = true;
-            this.btnWorkerAdd.Click += new System.EventHandler(this.btnWorkerAdd_Click);
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblUsername.Location = new System.Drawing.Point(23, 27);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(159, 24);
+            this.lblUsername.TabIndex = 2;
+            this.lblUsername.Text = "Pretražite radnike:";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnWorkerEdit
+            // btnSearch
             // 
-            this.btnWorkerEdit.AutoSize = true;
-            this.btnWorkerEdit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnWorkerEdit.Depth = 0;
-            this.btnWorkerEdit.Icon = ((System.Drawing.Image)(resources.GetObject("btnWorkerEdit.Icon")));
-            this.btnWorkerEdit.Location = new System.Drawing.Point(562, 42);
-            this.btnWorkerEdit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnWorkerEdit.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnWorkerEdit.Name = "btnWorkerEdit";
-            this.btnWorkerEdit.Primary = false;
-            this.btnWorkerEdit.Size = new System.Drawing.Size(98, 36);
-            this.btnWorkerEdit.TabIndex = 5;
-            this.btnWorkerEdit.Text = "Uredi";
-            this.btnWorkerEdit.UseVisualStyleBackColor = true;
-            this.btnWorkerEdit.Click += new System.EventHandler(this.btnWorkerEdit_Click);
-            // 
-            // btnWorkerDelete
-            // 
-            this.btnWorkerDelete.AutoSize = true;
-            this.btnWorkerDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnWorkerDelete.Depth = 0;
-            this.btnWorkerDelete.Icon = ((System.Drawing.Image)(resources.GetObject("btnWorkerDelete.Icon")));
-            this.btnWorkerDelete.Location = new System.Drawing.Point(828, 41);
-            this.btnWorkerDelete.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnWorkerDelete.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnWorkerDelete.Name = "btnWorkerDelete";
-            this.btnWorkerDelete.Primary = false;
-            this.btnWorkerDelete.Size = new System.Drawing.Size(103, 36);
-            this.btnWorkerDelete.TabIndex = 6;
-            this.btnWorkerDelete.Text = "Obriši";
-            this.btnWorkerDelete.UseVisualStyleBackColor = true;
-            this.btnWorkerDelete.Click += new System.EventHandler(this.btnWorkerDelete_Click);
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSearch.Location = new System.Drawing.Point(198, 69);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(103, 34);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.Text = "Pretraži";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // dgvWorkers
             // 
             this.dgvWorkers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWorkers.Location = new System.Drawing.Point(27, 100);
+            this.dgvWorkers.Location = new System.Drawing.Point(27, 129);
             this.dgvWorkers.Name = "dgvWorkers";
             this.dgvWorkers.RowHeadersWidth = 51;
             this.dgvWorkers.RowTemplate.Height = 24;
-            this.dgvWorkers.Size = new System.Drawing.Size(904, 360);
+            this.dgvWorkers.Size = new System.Drawing.Size(807, 347);
             this.dgvWorkers.TabIndex = 7;
             // 
-            // lblSearchWorker
+            // btnWorkerDelete
             // 
-            this.lblSearchWorker.AutoSize = true;
-            this.lblSearchWorker.Depth = 0;
-            this.lblSearchWorker.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblSearchWorker.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSearchWorker.Location = new System.Drawing.Point(23, 41);
-            this.lblSearchWorker.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblSearchWorker.Name = "lblSearchWorker";
-            this.lblSearchWorker.Size = new System.Drawing.Size(172, 24);
-            this.lblSearchWorker.TabIndex = 8;
-            this.lblSearchWorker.Text = "Pretražite korisnike";
+            this.btnWorkerDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWorkerDelete.Location = new System.Drawing.Point(716, 69);
+            this.btnWorkerDelete.Name = "btnWorkerDelete";
+            this.btnWorkerDelete.Size = new System.Drawing.Size(103, 34);
+            this.btnWorkerDelete.TabIndex = 8;
+            this.btnWorkerDelete.Text = "Obriši";
+            this.btnWorkerDelete.UseVisualStyleBackColor = true;
             // 
-            // materialContextMenuStrip1
+            // btnWorkerEdit
             // 
-            this.materialContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialContextMenuStrip1.Depth = 0;
-            this.materialContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.materialContextMenuStrip1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialContextMenuStrip1.Name = "materialContextMenuStrip1";
-            this.materialContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.btnWorkerEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWorkerEdit.Location = new System.Drawing.Point(593, 69);
+            this.btnWorkerEdit.Name = "btnWorkerEdit";
+            this.btnWorkerEdit.Size = new System.Drawing.Size(103, 34);
+            this.btnWorkerEdit.TabIndex = 9;
+            this.btnWorkerEdit.Text = "Uredi";
+            this.btnWorkerEdit.UseVisualStyleBackColor = true;
+            // 
+            // btnWorkerAdd
+            // 
+            this.btnWorkerAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWorkerAdd.Location = new System.Drawing.Point(469, 69);
+            this.btnWorkerAdd.Name = "btnWorkerAdd";
+            this.btnWorkerAdd.Size = new System.Drawing.Size(103, 34);
+            this.btnWorkerAdd.TabIndex = 10;
+            this.btnWorkerAdd.Text = "Dodaj";
+            this.btnWorkerAdd.UseVisualStyleBackColor = true;
             // 
             // txtSearchWorker
             // 
-            this.txtSearchWorker.Location = new System.Drawing.Point(211, 42);
+            this.txtSearchWorker.Location = new System.Drawing.Point(198, 30);
             this.txtSearchWorker.Name = "txtSearchWorker";
-            this.txtSearchWorker.Size = new System.Drawing.Size(219, 22);
-            this.txtSearchWorker.TabIndex = 9;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.AutoSize = true;
-            this.btnSearch.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnSearch.Depth = 0;
-            this.btnSearch.Icon = ((System.Drawing.Image)(resources.GetObject("btnSearch.Icon")));
-            this.btnSearch.Location = new System.Drawing.Point(437, 35);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnSearch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Primary = false;
-            this.btnSearch.Size = new System.Drawing.Size(44, 36);
-            this.btnSearch.TabIndex = 10;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.txtSearchWorker.Size = new System.Drawing.Size(253, 22);
+            this.txtSearchWorker.TabIndex = 11;
             // 
             // FrmWorkers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(960, 503);
-            this.Controls.Add(this.btnSearch);
+            this.ClientSize = new System.Drawing.Size(861, 502);
             this.Controls.Add(this.txtSearchWorker);
-            this.Controls.Add(this.lblSearchWorker);
-            this.Controls.Add(this.dgvWorkers);
-            this.Controls.Add(this.btnWorkerDelete);
-            this.Controls.Add(this.btnWorkerEdit);
             this.Controls.Add(this.btnWorkerAdd);
+            this.Controls.Add(this.btnWorkerEdit);
+            this.Controls.Add(this.btnWorkerDelete);
+            this.Controls.Add(this.dgvWorkers);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.lblUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmWorkers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Evidencija radnika";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Radnici";
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,14 +132,12 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialFlatButton btnWorkerAdd;
-        private MaterialSkin.Controls.MaterialFlatButton btnWorkerEdit;
-        private MaterialSkin.Controls.MaterialFlatButton btnWorkerDelete;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvWorkers;
-        private MaterialSkin.Controls.MaterialLabel lblSearchWorker;
-        private MaterialSkin.Controls.MaterialContextMenuStrip materialContextMenuStrip1;
+        private System.Windows.Forms.Button btnWorkerDelete;
+        private System.Windows.Forms.Button btnWorkerEdit;
+        private System.Windows.Forms.Button btnWorkerAdd;
         private System.Windows.Forms.TextBox txtSearchWorker;
-        private MaterialSkin.Controls.MaterialFlatButton btnSearch;
     }
 }
-

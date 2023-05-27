@@ -1,30 +1,25 @@
-﻿using MaterialSkin.Controls;
-using MaterialSkin;
+﻿using CleanWorks_Scheduler.Repositories;
 using System;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using CleanWorks_Scheduler.Models;
-using CleanWorks_Scheduler.Repositories;
 
 namespace CleanWorks_Scheduler
 {
     public partial class FrmLogin : Form
-    {
-        //string username = "admin";
-        //string password = "123456789";
-        public static Admin LoggedAdmin { get; set; }
+    {   string username = "admin";
+        string password = "123456789";
         public FrmLogin()
         {
             InitializeComponent();
-
         }
 
-        private void Prijava_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnAdmin_Click(object sender, EventArgs e)
         {
             if (txtUsername.Text == "")
             {
@@ -36,30 +31,19 @@ namespace CleanWorks_Scheduler
                 MessageBoxIcon.Error);
             } else
             {
-                /*if (txtUsername.Text == username && txtPassword.Text == password)
+                if (txtUsername.Text == username && txtPassword.Text == password)
                 {
                     FrmChoice frmChoice = new FrmChoice();
                     Hide();
                     frmChoice.ShowDialog();
                     Close();
                 } 
-                */
-                LoggedAdmin = AdminRepository.GetAdmin(txtUsername.Text);
-
-                if(LoggedAdmin != null && LoggedAdmin.Password == txtPassword.Text)
-                {
-                    FrmChoice frmChoice = new FrmChoice();
-                    Hide();
-                    frmChoice.ShowDialog();
-                    Close();
-                }
                 else
                 {
                     MessageBox.Show("Krivi podaci!", "Problem", MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 }
             }
-
         }
     }
 }

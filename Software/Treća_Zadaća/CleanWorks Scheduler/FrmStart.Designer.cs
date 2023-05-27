@@ -29,92 +29,73 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStart));
-            this.btnAdmin = new MaterialSkin.Controls.MaterialFlatButton();
-            this.btnWorker = new MaterialSkin.Controls.MaterialFlatButton();
-            this.lblWelcome = new MaterialSkin.Controls.MaterialLabel();
-            this.lblWarning = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.btnWorker = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(92, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(321, 72);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Dobrodošli u CleanWorks Scheduler!\r\n\r\nPrijevite se:\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(72, 287);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(359, 72);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Gumb Radnici nije funkcionalan jer se ne \r\nobrađuje u funkcionalnom zahtjevu.\r\nZa" +
+    " nastavak pritisnite gumb Administrator.\r\n";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAdmin
             // 
-            this.btnAdmin.AutoSize = true;
-            this.btnAdmin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdmin.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnAdmin.Depth = 0;
-            this.btnAdmin.Icon = null;
-            this.btnAdmin.Location = new System.Drawing.Point(116, 207);
-            this.btnAdmin.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnAdmin.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnAdmin.Location = new System.Drawing.Point(86, 195);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Primary = false;
-            this.btnAdmin.Size = new System.Drawing.Size(157, 36);
-            this.btnAdmin.TabIndex = 0;
+            this.btnAdmin.Size = new System.Drawing.Size(148, 42);
+            this.btnAdmin.TabIndex = 3;
             this.btnAdmin.Text = "Administrator";
-            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnWorker
             // 
-            this.btnWorker.AutoSize = true;
-            this.btnWorker.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnWorker.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnWorker.Depth = 0;
-            this.btnWorker.Icon = null;
-            this.btnWorker.Location = new System.Drawing.Point(368, 207);
-            this.btnWorker.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnWorker.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWorker.Location = new System.Drawing.Point(270, 195);
             this.btnWorker.Name = "btnWorker";
-            this.btnWorker.Primary = false;
-            this.btnWorker.Size = new System.Drawing.Size(83, 36);
-            this.btnWorker.TabIndex = 1;
+            this.btnWorker.Size = new System.Drawing.Size(134, 42);
+            this.btnWorker.TabIndex = 4;
             this.btnWorker.Text = "Radnik";
-            this.btnWorker.UseVisualStyleBackColor = false;
-            // 
-            // lblWelcome
-            // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
-            this.lblWelcome.Depth = 0;
-            this.lblWelcome.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblWelcome.Location = new System.Drawing.Point(101, 83);
-            this.lblWelcome.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(399, 72);
-            this.lblWelcome.TabIndex = 2;
-            this.lblWelcome.Text = "Dobrodošli u program CleanWorks  Scheduler!\r\n\r\nPrijavite se:";
-            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWarning
-            // 
-            this.lblWarning.AutoSize = true;
-            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
-            this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblWarning.Location = new System.Drawing.Point(112, 277);
-            this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(377, 72);
-            this.lblWarning.TabIndex = 4;
-            this.lblWarning.Text = "Funkcija za radnike ne radi jer nije u sklopu \r\nzahtjeva koji se obrađuje!\r\nZa na" +
-    "stavak pritisnite gumb administrator.";
-            this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnWorker.UseVisualStyleBackColor = true;
             // 
             // FrmStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(588, 409);
-            this.Controls.Add(this.lblWarning);
-            this.Controls.Add(this.lblWelcome);
+            this.ClientSize = new System.Drawing.Size(526, 391);
             this.Controls.Add(this.btnWorker);
             this.Controls.Add(this.btnAdmin);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dobrodošli!";
-            this.Load += new System.EventHandler(this.FrmStart_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,9 +103,9 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialFlatButton btnAdmin;
-        private MaterialSkin.Controls.MaterialFlatButton btnWorker;
-        private MaterialSkin.Controls.MaterialLabel lblWelcome;
-        private System.Windows.Forms.Label lblWarning;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Button btnWorker;
     }
 }

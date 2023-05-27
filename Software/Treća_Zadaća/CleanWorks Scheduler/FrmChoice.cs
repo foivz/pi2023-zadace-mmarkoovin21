@@ -15,20 +15,6 @@ namespace CleanWorks_Scheduler
         public FrmChoice()
         {
             InitializeComponent();
-
-        }
-
-        private void FrmChoice_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnWorkers_Click(object sender, EventArgs e)
-        {
-            FrmWorkers frmWorkers = new FrmWorkers();
-            Hide();
-            frmWorkers.ShowDialog();
-            Close();
         }
     }
 }
