@@ -22,13 +22,6 @@ namespace CleanWorks_Scheduler
         {
 
         }
-        private void btnPasswordGenerator_Click(object sender, EventArgs e)
-        {
-            var random = new Random();
-            int sifra = random.Next(1000000, 9999999);
-            txtPasswordGenerator.Text = sifra.ToString();
-
-        }
 
         private void btnPasswordGenerator_Click_1(object sender, EventArgs e)
         {

@@ -1,4 +1,5 @@
-﻿using CleanWorks_Scheduler.Repositories;
+﻿using CleanWorks_Scheduler.Models;
+using CleanWorks_Scheduler.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,8 +13,9 @@ using System.Windows.Forms;
 namespace CleanWorks_Scheduler
 {
     public partial class FrmLogin : Form
-    {   string username = "admin";
-        string password = "123456789";
+    {   //string username = "admin";
+        //string password = "123456789";
+        public static Admin LoggedAdmin { get; set; }
         public FrmLogin()
         {
             InitializeComponent();
@@ -31,19 +33,32 @@ namespace CleanWorks_Scheduler
                 MessageBoxIcon.Error);
             } else
             {
-                if (txtUsername.Text == username && txtPassword.Text == password)
+                /*if (txtUsername.Text == username && txtPassword.Text == password)
                 {
                     FrmChoice frmChoice = new FrmChoice();
                     Hide();
                     frmChoice.ShowDialog();
                     Close();
-                } 
-                else
+                } */
+                LoggedAdmin = AdminRepository.GetAdmin(txtUsername.Text);
+
+                if (LoggedAdmin != null && LoggedAdmin.Password == txtPassword.Text)
+                {
+                    FrmChoice frmChoice = new FrmChoice();
+                    Hide();
+                    frmChoice.ShowDialog();
+                    Close();
+                } else
                 {
                     MessageBox.Show("Krivi podaci!", "Problem", MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

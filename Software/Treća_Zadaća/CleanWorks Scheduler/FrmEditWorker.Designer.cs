@@ -57,6 +57,7 @@
             this.btnSaveWorker.TabIndex = 37;
             this.btnSaveWorker.Text = "Spremi";
             this.btnSaveWorker.UseVisualStyleBackColor = true;
+            this.btnSaveWorker.Click += new System.EventHandler(this.btnSaveWorker_Click);
             // 
             // btnPasswordGenerator
             // 
@@ -67,6 +68,7 @@
             this.btnPasswordGenerator.TabIndex = 36;
             this.btnPasswordGenerator.Text = "Generiraj";
             this.btnPasswordGenerator.UseVisualStyleBackColor = true;
+            this.btnPasswordGenerator.Click += new System.EventHandler(this.btnPasswordGenerator_Click);
             // 
             // txtPasswordGenerator
             // 
@@ -248,6 +250,7 @@
             this.Name = "FrmEditWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Uredite radnika";
+            this.Load += new System.EventHandler(this.FrmEditWorker_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
