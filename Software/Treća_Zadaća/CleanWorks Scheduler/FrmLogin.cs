@@ -3,13 +3,16 @@ using MaterialSkin;
 using System;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Windows.Forms;
+using CleanWorks_Scheduler.Models;
+using CleanWorks_Scheduler.Repositories;
 
 namespace CleanWorks_Scheduler
 {
     public partial class FrmLogin : MaterialForm
     {
-        string username = "admin";
-        string password = "123456789";
+        //string username = "admin";
+        //string password = "123456789";
+        public static Admin LoggedAdmin { get; set; }
         public FrmLogin()
         {
             InitializeComponent();
@@ -44,13 +47,24 @@ namespace CleanWorks_Scheduler
                 MessageBoxIcon.Error);
             } else
             {
-                if (txtUsername.Text == username && txtPassword.Text == password)
+                /*if (txtUsername.Text == username && txtPassword.Text == password)
                 {
                     FrmChoice frmChoice = new FrmChoice();
                     Hide();
                     frmChoice.ShowDialog();
                     Close();
-                } else
+                } 
+                */
+                LoggedAdmin = AdminRepository.GetAdmin(txtUsername.Text);
+
+                if(LoggedAdmin != null && LoggedAdmin.Password == txtPassword.Text)
+                {
+                    FrmChoice frmChoice = new FrmChoice();
+                    Hide();
+                    frmChoice.ShowDialog();
+                    Close();
+                }
+                else
                 {
                     MessageBox.Show("Krivi podaci!", "Problem", MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
