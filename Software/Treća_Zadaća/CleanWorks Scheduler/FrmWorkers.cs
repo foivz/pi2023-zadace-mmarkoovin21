@@ -88,5 +88,13 @@ namespace CleanWorks_Scheduler
             FrmWorkers frmWorkers = new FrmWorkers();
             frmWorkers.ShowDialog();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            FrmStart frmStart = new FrmStart();
+            Hide();
+            frmStart.ShowDialog();
+            Close();
+        }
     }
 }

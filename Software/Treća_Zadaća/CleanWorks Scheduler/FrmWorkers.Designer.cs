@@ -35,6 +35,7 @@
             this.btnWorkerEdit = new System.Windows.Forms.Button();
             this.btnWorkerAdd = new System.Windows.Forms.Button();
             this.txtSearchWorker = new System.Windows.Forms.TextBox();
+            this.btnLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,12 +112,24 @@
             this.txtSearchWorker.Size = new System.Drawing.Size(253, 22);
             this.txtSearchWorker.TabIndex = 11;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLogout.Location = new System.Drawing.Point(716, 18);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(103, 34);
+            this.btnLogout.TabIndex = 12;
+            this.btnLogout.Text = "Odjava";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // FrmWorkers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(861, 502);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.txtSearchWorker);
             this.Controls.Add(this.btnWorkerAdd);
             this.Controls.Add(this.btnWorkerEdit);
@@ -144,5 +157,6 @@
         private System.Windows.Forms.Button btnWorkerEdit;
         private System.Windows.Forms.Button btnWorkerAdd;
         private System.Windows.Forms.TextBox txtSearchWorker;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
