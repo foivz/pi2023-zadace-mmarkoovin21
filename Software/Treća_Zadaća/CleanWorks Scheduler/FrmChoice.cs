@@ -24,5 +24,24 @@ namespace CleanWorks_Scheduler
             frmWorkers.ShowDialog();
             Close();
         }
+
+        private void btnClients_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Funkcija ne radi!", "Problem", MessageBoxButtons.OK,
+            MessageBoxIcon.Error);
+        }
+
+        private void btnCalendar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Funkcija ne radi!", "Problem", MessageBoxButtons.OK,
+            MessageBoxIcon.Error);
+        }
+
+        private void btnServices_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Funkcija ne radi!", "Problem", MessageBoxButtons.OK,
+            MessageBoxIcon.Error);
+        }
     }
 }

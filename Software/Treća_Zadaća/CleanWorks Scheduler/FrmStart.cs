@@ -24,5 +24,16 @@ namespace CleanWorks_Scheduler
             frmLogin.ShowDialog();
             Close();
         }
+
+        private void FrmStart_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWorker_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Funkcija ne radi!", "Problem", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+        }
     }
 }

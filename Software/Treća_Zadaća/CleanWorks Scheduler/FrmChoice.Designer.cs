@@ -58,6 +58,7 @@
             this.btnCalendar.TabIndex = 6;
             this.btnCalendar.Text = "Kalendar";
             this.btnCalendar.UseVisualStyleBackColor = true;
+            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
             // btnClients
             // 
@@ -68,6 +69,7 @@
             this.btnClients.TabIndex = 7;
             this.btnClients.Text = "Klijenti";
             this.btnClients.UseVisualStyleBackColor = true;
+            this.btnClients.Click += new System.EventHandler(this.btnClients_Click);
             // 
             // btnWorkers
             // 
@@ -89,6 +91,7 @@
             this.btnServices.TabIndex = 9;
             this.btnServices.Text = "Usluge";
             this.btnServices.UseVisualStyleBackColor = true;
+            this.btnServices.Click += new System.EventHandler(this.btnServices_Click);
             // 
             // FrmChoice
             // 

@@ -81,6 +81,7 @@
             this.btnWorker.TabIndex = 4;
             this.btnWorker.Text = "Radnik";
             this.btnWorker.UseVisualStyleBackColor = true;
+            this.btnWorker.Click += new System.EventHandler(this.btnWorker_Click);
             // 
             // FrmStart
             // 
@@ -96,6 +97,7 @@
             this.Name = "FrmStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dobrodošli!";
+            this.Load += new System.EventHandler(this.FrmStart_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
