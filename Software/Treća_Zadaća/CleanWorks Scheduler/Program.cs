@@ -18,7 +18,7 @@ namespace CleanWorks_Scheduler
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             DB.SetConfiguration("IPS23_mmarkovin21", "mmarkovin21", ":UJ}3rEv");
-            Application.Run(new FrmLogin());
+            Application.Run(new FrmStart());
         }
     }
 }

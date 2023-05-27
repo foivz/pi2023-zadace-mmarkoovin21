@@ -46,9 +46,9 @@ namespace CleanWorks_Scheduler
             {
                 if (txtUsername.Text == username && txtPassword.Text == password)
                 {
-                    FrmWorkers frmWorkers = new FrmWorkers();
+                    FrmChoice frmChoice = new FrmChoice();
                     Hide();
-                    frmWorkers.ShowDialog();
+                    frmChoice.ShowDialog();
                     Close();
                 } else
                 {

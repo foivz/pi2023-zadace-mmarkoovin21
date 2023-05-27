@@ -68,11 +68,23 @@
     <Compile Include="FrmAddWorker.Designer.cs">
       <DependentUpon>FrmAddWorker.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChoice.Designer.cs">
+      <DependentUpon>FrmChoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEditWorker.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmEditWorker.Designer.cs">
       <DependentUpon>FrmEditWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStart.Designer.cs">
+      <DependentUpon>FrmStart.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmWorkers.cs">
       <SubType>Form</SubType>
@@ -95,8 +107,14 @@
     <EmbeddedResource Include="FrmAddWorker.resx">
       <DependentUpon>FrmAddWorker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmChoice.resx">
+      <DependentUpon>FrmChoice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEditWorker.resx">
       <DependentUpon>FrmEditWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStart.resx">
+      <DependentUpon>FrmStart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmWorkers.resx">
       <DependentUpon>FrmWorkers.cs</DependentUpon>

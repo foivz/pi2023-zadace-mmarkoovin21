@@ -82,6 +82,12 @@ namespace CleanWorks_Scheduler.Repositories
             };
             return worker;
         }
-
+        public static void UpdateWorker(Worker worker)
+        {
+            string sql = $"UPDATE Workers SET Ime='{worker.FirstName}', Prezime='{worker.LastName}', Adresa='{worker.Adress}', Mail='{worker.MailWorker}', OIB='{worker.OIB}', Broj_mobitela='{worker.PhoneNumber}', Sifra='{worker.Password}' WHERE Id={worker.Id}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
     }
 }

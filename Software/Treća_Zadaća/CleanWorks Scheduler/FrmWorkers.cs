@@ -64,8 +64,6 @@ namespace CleanWorks_Scheduler
 
         private void btnWorkerAdd_Click(object sender, EventArgs e)
         {
-            Hide();
-            Close();
             FrmAddWorker frmAddWorker = new FrmAddWorker();
             frmAddWorker.ShowDialog();
             
