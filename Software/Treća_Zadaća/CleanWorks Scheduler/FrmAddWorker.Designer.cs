@@ -207,8 +207,9 @@
             this.btnPasswordGenerator.Name = "btnPasswordGenerator";
             this.btnPasswordGenerator.Size = new System.Drawing.Size(134, 42);
             this.btnPasswordGenerator.TabIndex = 18;
-            this.btnPasswordGenerator.Text = "Prijava";
+            this.btnPasswordGenerator.Text = "Generiraj";
             this.btnPasswordGenerator.UseVisualStyleBackColor = true;
+            this.btnPasswordGenerator.Click += new System.EventHandler(this.btnPasswordGenerator_Click_1);
             // 
             // btnSaveWorker
             // 
@@ -219,6 +220,7 @@
             this.btnSaveWorker.TabIndex = 19;
             this.btnSaveWorker.Text = "Spremi";
             this.btnSaveWorker.UseVisualStyleBackColor = true;
+            this.btnSaveWorker.Click += new System.EventHandler(this.btnSaveWorker_Click);
             // 
             // FrmAddWorker
             // 
@@ -248,6 +250,7 @@
             this.Name = "FrmAddWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodaj radnika";
+            this.Load += new System.EventHandler(this.FrmAddWorker_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

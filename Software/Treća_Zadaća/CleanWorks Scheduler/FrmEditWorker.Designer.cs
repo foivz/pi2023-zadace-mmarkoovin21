@@ -65,7 +65,7 @@
             this.btnPasswordGenerator.Name = "btnPasswordGenerator";
             this.btnPasswordGenerator.Size = new System.Drawing.Size(134, 42);
             this.btnPasswordGenerator.TabIndex = 36;
-            this.btnPasswordGenerator.Text = "Prijava";
+            this.btnPasswordGenerator.Text = "Generiraj";
             this.btnPasswordGenerator.UseVisualStyleBackColor = true;
             // 
             // txtPasswordGenerator

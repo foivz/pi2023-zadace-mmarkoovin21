@@ -65,6 +65,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(140, 22);
             this.txtUsername.TabIndex = 3;
+            this.txtUsername.Text = "admin";
             // 
             // txtPassword
             // 
@@ -72,6 +73,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(140, 22);
             this.txtPassword.TabIndex = 4;
+            this.txtPassword.Text = "123456789";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnAdmin
