@@ -59,6 +59,7 @@
             this.btnSearch.TabIndex = 6;
             this.btnSearch.Text = "Pretraži";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dgvWorkers
             // 
@@ -79,6 +80,7 @@
             this.btnWorkerDelete.TabIndex = 8;
             this.btnWorkerDelete.Text = "Obriši";
             this.btnWorkerDelete.UseVisualStyleBackColor = true;
+            this.btnWorkerDelete.Click += new System.EventHandler(this.btnWorkerDelete_Click);
             // 
             // btnWorkerEdit
             // 
@@ -89,6 +91,7 @@
             this.btnWorkerEdit.TabIndex = 9;
             this.btnWorkerEdit.Text = "Uredi";
             this.btnWorkerEdit.UseVisualStyleBackColor = true;
+            this.btnWorkerEdit.Click += new System.EventHandler(this.btnWorkerEdit_Click);
             // 
             // btnWorkerAdd
             // 
@@ -99,6 +102,7 @@
             this.btnWorkerAdd.TabIndex = 10;
             this.btnWorkerAdd.Text = "Dodaj";
             this.btnWorkerAdd.UseVisualStyleBackColor = true;
+            this.btnWorkerAdd.Click += new System.EventHandler(this.btnWorkerAdd_Click);
             // 
             // txtSearchWorker
             // 
@@ -124,6 +128,7 @@
             this.Name = "FrmWorkers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Radnici";
+            this.Load += new System.EventHandler(this.FrmWorkers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

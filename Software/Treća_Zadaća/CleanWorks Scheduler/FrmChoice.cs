@@ -16,5 +16,13 @@ namespace CleanWorks_Scheduler
         {
             InitializeComponent();
         }
+
+        private void btnWorkers_Click(object sender, EventArgs e)
+        {
+            FrmWorkers frmWorkers = new FrmWorkers();
+            Hide();
+            frmWorkers.ShowDialog();
+            Close();
+        }
     }
 }

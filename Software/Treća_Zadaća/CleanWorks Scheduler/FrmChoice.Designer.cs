@@ -78,6 +78,7 @@
             this.btnWorkers.TabIndex = 8;
             this.btnWorkers.Text = "Radnici";
             this.btnWorkers.UseVisualStyleBackColor = true;
+            this.btnWorkers.Click += new System.EventHandler(this.btnWorkers_Click);
             // 
             // btnServices
             // 
