@@ -46,7 +46,7 @@
             this.btnWorkerAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnWorkerAdd.Depth = 0;
             this.btnWorkerAdd.Icon = ((System.Drawing.Image)(resources.GetObject("btnWorkerAdd.Icon")));
-            this.btnWorkerAdd.Location = new System.Drawing.Point(695, 92);
+            this.btnWorkerAdd.Location = new System.Drawing.Point(697, 42);
             this.btnWorkerAdd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnWorkerAdd.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnWorkerAdd.Name = "btnWorkerAdd";
@@ -63,7 +63,7 @@
             this.btnWorkerEdit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnWorkerEdit.Depth = 0;
             this.btnWorkerEdit.Icon = ((System.Drawing.Image)(resources.GetObject("btnWorkerEdit.Icon")));
-            this.btnWorkerEdit.Location = new System.Drawing.Point(560, 92);
+            this.btnWorkerEdit.Location = new System.Drawing.Point(562, 42);
             this.btnWorkerEdit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnWorkerEdit.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnWorkerEdit.Name = "btnWorkerEdit";
@@ -80,7 +80,7 @@
             this.btnWorkerDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnWorkerDelete.Depth = 0;
             this.btnWorkerDelete.Icon = ((System.Drawing.Image)(resources.GetObject("btnWorkerDelete.Icon")));
-            this.btnWorkerDelete.Location = new System.Drawing.Point(826, 91);
+            this.btnWorkerDelete.Location = new System.Drawing.Point(828, 41);
             this.btnWorkerDelete.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnWorkerDelete.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnWorkerDelete.Name = "btnWorkerDelete";
@@ -94,7 +94,7 @@
             // dgvWorkers
             // 
             this.dgvWorkers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWorkers.Location = new System.Drawing.Point(25, 157);
+            this.dgvWorkers.Location = new System.Drawing.Point(27, 100);
             this.dgvWorkers.Name = "dgvWorkers";
             this.dgvWorkers.RowHeadersWidth = 51;
             this.dgvWorkers.RowTemplate.Height = 24;
@@ -107,7 +107,7 @@
             this.lblSearchWorker.Depth = 0;
             this.lblSearchWorker.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblSearchWorker.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSearchWorker.Location = new System.Drawing.Point(21, 91);
+            this.lblSearchWorker.Location = new System.Drawing.Point(23, 41);
             this.lblSearchWorker.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblSearchWorker.Name = "lblSearchWorker";
             this.lblSearchWorker.Size = new System.Drawing.Size(172, 24);
@@ -125,7 +125,7 @@
             // 
             // txtSearchWorker
             // 
-            this.txtSearchWorker.Location = new System.Drawing.Point(209, 92);
+            this.txtSearchWorker.Location = new System.Drawing.Point(211, 42);
             this.txtSearchWorker.Name = "txtSearchWorker";
             this.txtSearchWorker.Size = new System.Drawing.Size(219, 22);
             this.txtSearchWorker.TabIndex = 9;
@@ -136,7 +136,7 @@
             this.btnSearch.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSearch.Depth = 0;
             this.btnSearch.Icon = ((System.Drawing.Image)(resources.GetObject("btnSearch.Icon")));
-            this.btnSearch.Location = new System.Drawing.Point(435, 85);
+            this.btnSearch.Location = new System.Drawing.Point(437, 35);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnSearch.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSearch.Name = "btnSearch";
@@ -150,7 +150,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 562);
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ClientSize = new System.Drawing.Size(960, 503);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearchWorker);
             this.Controls.Add(this.lblSearchWorker);
@@ -158,6 +159,7 @@
             this.Controls.Add(this.btnWorkerDelete);
             this.Controls.Add(this.btnWorkerEdit);
             this.Controls.Add(this.btnWorkerAdd);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmWorkers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Evidencija radnika";

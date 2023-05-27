@@ -55,7 +55,7 @@
             this.lblFirstName.Depth = 0;
             this.lblFirstName.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblFirstName.Location = new System.Drawing.Point(26, 192);
+            this.lblFirstName.Location = new System.Drawing.Point(31, 136);
             this.lblFirstName.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(47, 24);
@@ -68,7 +68,7 @@
             this.lblLastName.Depth = 0;
             this.lblLastName.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblLastName.Location = new System.Drawing.Point(26, 281);
+            this.lblLastName.Location = new System.Drawing.Point(31, 225);
             this.lblLastName.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(84, 24);
@@ -81,7 +81,7 @@
             this.lblMail.Depth = 0;
             this.lblMail.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMail.Location = new System.Drawing.Point(389, 106);
+            this.lblMail.Location = new System.Drawing.Point(394, 50);
             this.lblMail.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblMail.Name = "lblMail";
             this.lblMail.Size = new System.Drawing.Size(78, 24);
@@ -94,7 +94,7 @@
             this.lblOIB.Depth = 0;
             this.lblOIB.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblOIB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblOIB.Location = new System.Drawing.Point(389, 192);
+            this.lblOIB.Location = new System.Drawing.Point(394, 136);
             this.lblOIB.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblOIB.Name = "lblOIB";
             this.lblOIB.Size = new System.Drawing.Size(45, 24);
@@ -107,7 +107,7 @@
             this.lblTelephone.Depth = 0;
             this.lblTelephone.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblTelephone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTelephone.Location = new System.Drawing.Point(389, 284);
+            this.lblTelephone.Location = new System.Drawing.Point(394, 228);
             this.lblTelephone.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblTelephone.Name = "lblTelephone";
             this.lblTelephone.Size = new System.Drawing.Size(129, 24);
@@ -116,35 +116,35 @@
             // 
             // txtMail
             // 
-            this.txtMail.Location = new System.Drawing.Point(393, 143);
+            this.txtMail.Location = new System.Drawing.Point(398, 87);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(250, 22);
             this.txtMail.TabIndex = 8;
             // 
             // txtOIB
             // 
-            this.txtOIB.Location = new System.Drawing.Point(393, 235);
+            this.txtOIB.Location = new System.Drawing.Point(398, 179);
             this.txtOIB.Name = "txtOIB";
             this.txtOIB.Size = new System.Drawing.Size(148, 22);
             this.txtOIB.TabIndex = 9;
             // 
             // txtTelephone
             // 
-            this.txtTelephone.Location = new System.Drawing.Point(393, 332);
+            this.txtTelephone.Location = new System.Drawing.Point(398, 276);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(148, 22);
             this.txtTelephone.TabIndex = 10;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(30, 324);
+            this.txtLastName.Location = new System.Drawing.Point(35, 268);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(182, 22);
             this.txtLastName.TabIndex = 11;
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(30, 232);
+            this.txtFirstName.Location = new System.Drawing.Point(35, 176);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(188, 22);
             this.txtFirstName.TabIndex = 13;
@@ -155,7 +155,7 @@
             this.btnSaveWorker.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSaveWorker.Depth = 0;
             this.btnSaveWorker.Icon = ((System.Drawing.Image)(resources.GetObject("btnSaveWorker.Icon")));
-            this.btnSaveWorker.Location = new System.Drawing.Point(657, 453);
+            this.btnSaveWorker.Location = new System.Drawing.Point(662, 397);
             this.btnSaveWorker.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnSaveWorker.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSaveWorker.Name = "btnSaveWorker";
@@ -168,7 +168,7 @@
             // 
             // txtAdress
             // 
-            this.txtAdress.Location = new System.Drawing.Point(30, 422);
+            this.txtAdress.Location = new System.Drawing.Point(35, 366);
             this.txtAdress.Name = "txtAdress";
             this.txtAdress.Size = new System.Drawing.Size(224, 22);
             this.txtAdress.TabIndex = 12;
@@ -179,7 +179,7 @@
             this.lblAdress.Depth = 0;
             this.lblAdress.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblAdress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAdress.Location = new System.Drawing.Point(26, 373);
+            this.lblAdress.Location = new System.Drawing.Point(31, 317);
             this.lblAdress.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblAdress.Name = "lblAdress";
             this.lblAdress.Size = new System.Drawing.Size(170, 24);
@@ -192,7 +192,7 @@
             this.lblIdentificationNumber.Depth = 0;
             this.lblIdentificationNumber.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblIdentificationNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblIdentificationNumber.Location = new System.Drawing.Point(26, 106);
+            this.lblIdentificationNumber.Location = new System.Drawing.Point(31, 50);
             this.lblIdentificationNumber.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblIdentificationNumber.Name = "lblIdentificationNumber";
             this.lblIdentificationNumber.Size = new System.Drawing.Size(31, 24);
@@ -201,7 +201,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(30, 144);
+            this.txtId.Location = new System.Drawing.Point(35, 88);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(183, 22);
             this.txtId.TabIndex = 19;
@@ -212,7 +212,7 @@
             this.btnPasswordGenerator.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPasswordGenerator.Depth = 0;
             this.btnPasswordGenerator.Icon = null;
-            this.btnPasswordGenerator.Location = new System.Drawing.Point(385, 453);
+            this.btnPasswordGenerator.Location = new System.Drawing.Point(390, 397);
             this.btnPasswordGenerator.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnPasswordGenerator.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnPasswordGenerator.Name = "btnPasswordGenerator";
@@ -225,7 +225,7 @@
             // 
             // txtPasswordGenerator
             // 
-            this.txtPasswordGenerator.Location = new System.Drawing.Point(385, 411);
+            this.txtPasswordGenerator.Location = new System.Drawing.Point(390, 355);
             this.txtPasswordGenerator.Name = "txtPasswordGenerator";
             this.txtPasswordGenerator.Size = new System.Drawing.Size(133, 22);
             this.txtPasswordGenerator.TabIndex = 22;
@@ -236,7 +236,7 @@
             this.lblPasswordGenerator.Depth = 0;
             this.lblPasswordGenerator.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblPasswordGenerator.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPasswordGenerator.Location = new System.Drawing.Point(385, 373);
+            this.lblPasswordGenerator.Location = new System.Drawing.Point(390, 317);
             this.lblPasswordGenerator.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPasswordGenerator.Name = "lblPasswordGenerator";
             this.lblPasswordGenerator.Size = new System.Drawing.Size(133, 24);
@@ -247,7 +247,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 512);
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ClientSize = new System.Drawing.Size(800, 463);
             this.Controls.Add(this.btnPasswordGenerator);
             this.Controls.Add(this.txtPasswordGenerator);
             this.Controls.Add(this.lblPasswordGenerator);
@@ -266,6 +267,7 @@
             this.Controls.Add(this.lblMail);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblFirstName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmEditWorker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Uređivanje";

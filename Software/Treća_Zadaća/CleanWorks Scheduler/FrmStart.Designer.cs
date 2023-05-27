@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStart));
             this.btnAdmin = new MaterialSkin.Controls.MaterialFlatButton();
             this.btnWorker = new MaterialSkin.Controls.MaterialFlatButton();
             this.lblWelcome = new MaterialSkin.Controls.MaterialLabel();
@@ -38,10 +39,10 @@
             // 
             this.btnAdmin.AutoSize = true;
             this.btnAdmin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdmin.BackColor = System.Drawing.Color.White;
+            this.btnAdmin.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnAdmin.Depth = 0;
             this.btnAdmin.Icon = null;
-            this.btnAdmin.Location = new System.Drawing.Point(210, 191);
+            this.btnAdmin.Location = new System.Drawing.Point(116, 207);
             this.btnAdmin.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAdmin.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAdmin.Name = "btnAdmin";
@@ -56,10 +57,10 @@
             // 
             this.btnWorker.AutoSize = true;
             this.btnWorker.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnWorker.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnWorker.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnWorker.Depth = 0;
             this.btnWorker.Icon = null;
-            this.btnWorker.Location = new System.Drawing.Point(247, 255);
+            this.btnWorker.Location = new System.Drawing.Point(368, 207);
             this.btnWorker.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnWorker.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnWorker.Name = "btnWorker";
@@ -72,11 +73,11 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcome.Depth = 0;
             this.lblWelcome.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblWelcome.Location = new System.Drawing.Point(90, 88);
+            this.lblWelcome.Location = new System.Drawing.Point(101, 83);
             this.lblWelcome.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(399, 72);
@@ -87,10 +88,10 @@
             // lblWarning
             // 
             this.lblWarning.AutoSize = true;
-            this.lblWarning.BackColor = System.Drawing.Color.White;
+            this.lblWarning.BackColor = System.Drawing.Color.Transparent;
             this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lblWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblWarning.Location = new System.Drawing.Point(101, 309);
+            this.lblWarning.Location = new System.Drawing.Point(112, 277);
             this.lblWarning.Name = "lblWarning";
             this.lblWarning.Size = new System.Drawing.Size(377, 72);
             this.lblWarning.TabIndex = 4;
@@ -102,12 +103,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCyan;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(588, 409);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnWorker);
             this.Controls.Add(this.btnAdmin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dobrodošli!";

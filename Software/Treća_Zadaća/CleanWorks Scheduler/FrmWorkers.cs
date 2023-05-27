@@ -10,28 +10,15 @@ using System.Windows.Forms;
 using CleanWorks_Scheduler.Models;
 using CleanWorks_Scheduler.Repositories;
 using DBLayer;
-using MaterialSkin;
-using MaterialSkin.Controls;
 
 namespace CleanWorks_Scheduler
 {
-    public partial class FrmWorkers : MaterialForm
+    public partial class FrmWorkers : Form
     {
         public FrmWorkers()
         {
             InitializeComponent();
 
-            MaterialSkinManager materialSkinMannager = MaterialSkinManager.Instance;
-            materialSkinMannager.AddFormToManage(this);
-            const MaterialSkinManager.Themes lIGHT = MaterialSkinManager.Themes.LIGHT;
-
-            materialSkinMannager.Theme = lIGHT;
-
-            materialSkinMannager.ColorScheme = new ColorScheme(
-                Primary.Blue400, Primary.Blue500,
-                Primary.Blue500, Accent.LightBlue200,
-                TextShade.WHITE
-                );
         }
 
         private void Form1_Load(object sender, EventArgs e)

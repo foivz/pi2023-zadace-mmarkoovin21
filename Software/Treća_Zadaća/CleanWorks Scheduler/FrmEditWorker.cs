@@ -1,5 +1,4 @@
-﻿using MaterialSkin;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,13 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using MaterialSkin.Controls;
 using CleanWorks_Scheduler.Models;
 using CleanWorks_Scheduler.Repositories;
 
 namespace CleanWorks_Scheduler
 {
-    public partial class FrmEditWorker : MaterialForm
+    public partial class FrmEditWorker : Form
     {
         private Worker worker;
 
@@ -23,17 +21,6 @@ namespace CleanWorks_Scheduler
         {
             InitializeComponent();
 
-            MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            const MaterialSkinManager.Themes lIGHT = MaterialSkinManager.Themes.LIGHT;
-
-            materialSkinManager.Theme = lIGHT;
-
-            materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Blue400, Primary.Blue500,
-                Primary.Blue500, Accent.LightBlue200,
-                TextShade.WHITE
-                );
         }
 
         public FrmEditWorker(Worker worker) : this()

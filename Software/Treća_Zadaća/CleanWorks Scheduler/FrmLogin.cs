@@ -8,7 +8,7 @@ using CleanWorks_Scheduler.Repositories;
 
 namespace CleanWorks_Scheduler
 {
-    public partial class FrmLogin : MaterialForm
+    public partial class FrmLogin : Form
     {
         //string username = "admin";
         //string password = "123456789";
@@ -17,17 +17,6 @@ namespace CleanWorks_Scheduler
         {
             InitializeComponent();
 
-            MaterialSkinManager materialSkinMannager = MaterialSkinManager.Instance;
-            materialSkinMannager.AddFormToManage(this);
-            const MaterialSkinManager.Themes lIGHT = MaterialSkinManager.Themes.LIGHT;
-
-            materialSkinMannager.Theme = lIGHT;
-
-            materialSkinMannager.ColorScheme = new ColorScheme(
-                Primary.Blue400, Primary.Blue500,
-                Primary.Blue500, Accent.LightBlue200,
-                TextShade.WHITE
-                );
         }
 
         private void Prijava_Load(object sender, EventArgs e)

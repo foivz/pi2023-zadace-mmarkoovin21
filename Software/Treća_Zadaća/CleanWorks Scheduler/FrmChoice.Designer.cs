@@ -42,7 +42,7 @@
             this.btnWorkers.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnWorkers.Depth = 0;
             this.btnWorkers.Icon = ((System.Drawing.Image)(resources.GetObject("btnWorkers.Icon")));
-            this.btnWorkers.Location = new System.Drawing.Point(64, 119);
+            this.btnWorkers.Location = new System.Drawing.Point(67, 72);
             this.btnWorkers.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnWorkers.Name = "btnWorkers";
             this.btnWorkers.Primary = true;
@@ -58,7 +58,7 @@
             this.btnClients.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnClients.Depth = 0;
             this.btnClients.Icon = ((System.Drawing.Image)(resources.GetObject("btnClients.Icon")));
-            this.btnClients.Location = new System.Drawing.Point(246, 119);
+            this.btnClients.Location = new System.Drawing.Point(249, 72);
             this.btnClients.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnClients.Name = "btnClients";
             this.btnClients.Primary = true;
@@ -73,7 +73,7 @@
             this.btnCalendar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnCalendar.Depth = 0;
             this.btnCalendar.Icon = ((System.Drawing.Image)(resources.GetObject("btnCalendar.Icon")));
-            this.btnCalendar.Location = new System.Drawing.Point(64, 184);
+            this.btnCalendar.Location = new System.Drawing.Point(67, 141);
             this.btnCalendar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCalendar.Name = "btnCalendar";
             this.btnCalendar.Primary = true;
@@ -88,7 +88,7 @@
             this.btnServices.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnServices.Depth = 0;
             this.btnServices.Icon = ((System.Drawing.Image)(resources.GetObject("btnServices.Icon")));
-            this.btnServices.Location = new System.Drawing.Point(246, 184);
+            this.btnServices.Location = new System.Drawing.Point(249, 141);
             this.btnServices.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnServices.Name = "btnServices";
             this.btnServices.Primary = true;
@@ -103,7 +103,7 @@
             this.lblWarning.BackColor = System.Drawing.Color.White;
             this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lblWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblWarning.Location = new System.Drawing.Point(29, 243);
+            this.lblWarning.Location = new System.Drawing.Point(32, 216);
             this.lblWarning.Name = "lblWarning";
             this.lblWarning.Size = new System.Drawing.Size(375, 72);
             this.lblWarning.TabIndex = 5;
@@ -115,12 +115,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(436, 347);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.btnServices);
             this.Controls.Add(this.btnCalendar);
             this.Controls.Add(this.btnClients);
             this.Controls.Add(this.btnWorkers);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmChoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Izbornik";

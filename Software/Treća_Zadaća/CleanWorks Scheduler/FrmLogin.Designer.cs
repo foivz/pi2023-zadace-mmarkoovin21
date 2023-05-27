@@ -41,7 +41,7 @@
             this.btnLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLogin.Depth = 0;
             this.btnLogin.Icon = null;
-            this.btnLogin.Location = new System.Drawing.Point(143, 197);
+            this.btnLogin.Location = new System.Drawing.Point(139, 153);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLogin.Name = "btnLogin";
@@ -58,7 +58,7 @@
             this.lblUsername.Depth = 0;
             this.lblUsername.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblUsername.Location = new System.Drawing.Point(25, 95);
+            this.lblUsername.Location = new System.Drawing.Point(23, 48);
             this.lblUsername.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(137, 24);
@@ -71,7 +71,7 @@
             this.lblPassword.Depth = 0;
             this.lblPassword.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPassword.Location = new System.Drawing.Point(25, 145);
+            this.lblPassword.Location = new System.Drawing.Point(23, 100);
             this.lblPassword.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(49, 24);
@@ -80,15 +80,15 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(188, 95);
+            this.txtUsername.Location = new System.Drawing.Point(186, 50);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(178, 22);
             this.txtUsername.TabIndex = 3;
-            this.txtUsername.Text = "admin";
+            this.txtUsername.Text = "admin1";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(188, 145);
+            this.txtPassword.Location = new System.Drawing.Point(186, 100);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(178, 22);
             this.txtPassword.TabIndex = 4;
@@ -99,12 +99,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 260);
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ClientSize = new System.Drawing.Size(386, 218);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.btnLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava";

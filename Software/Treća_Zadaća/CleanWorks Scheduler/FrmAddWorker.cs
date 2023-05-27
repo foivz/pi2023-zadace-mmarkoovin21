@@ -14,23 +14,12 @@ using System.Windows.Forms;
 
 namespace CleanWorks_Scheduler
 {
-    public partial class FrmAddWorker : MaterialForm
+    public partial class FrmAddWorker : Form
     {
         public FrmAddWorker()
         {
             InitializeComponent();
 
-            MaterialSkinManager materialSkinMannager = MaterialSkinManager.Instance;
-            materialSkinMannager.AddFormToManage(this);
-            const MaterialSkinManager.Themes lIGHT = MaterialSkinManager.Themes.LIGHT;
-
-            materialSkinMannager.Theme = lIGHT;
-
-            materialSkinMannager.ColorScheme = new ColorScheme(
-                Primary.Blue400, Primary.Blue500,
-                Primary.Blue500, Accent.LightBlue200,
-                TextShade.WHITE
-                );
         }
 
         private void FrmAddWorker_Load(object sender, EventArgs e)
