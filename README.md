@@ -28,3 +28,10 @@ https://github.com/foivz/pi2023-zadace-mmarkoovin21/blob/aa2d03ae00b3e328d819587
 
 ## Resursi
 Svi resursi nalaze se u mapi _Documentation_.
+
+## Podaci z aprijavu u aplikaciju
+Korisničko ime | Lozinka 
+------------  | ------------------- 
+admin1 | 123456789 
+admin2 | 987654321
+admin3 | 010101010 
